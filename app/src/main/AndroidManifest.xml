@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.distractfree">
-
     <!-- Accessibility permission -->
-    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
-
-    <!-- Required for showing overlays (optional) -->
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-
-    <!-- Internet if needed -->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" /> <!-- Required for showing overlays (optional) -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- Internet if needed -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,21 +13,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DistractFree">
-
-        <!-- Launcher Activity -->
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <!-- Launcher Activity -->
+        <activity
+            android:name=".Welcome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <service
             android:name=".FocusAccessibilityService"
-            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
-            android:exported="true">
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
             </intent-filter>
@@ -40,11 +38,10 @@
             <meta-data
                 android:name="android.accessibilityservice"
                 android:resource="@xml/accessibility_service_config" />
-        </service>
-
-        <!-- Optional: Overlay blocker service -->
+        </service> <!-- Optional: Overlay blocker service -->
         <service
             android:name=".OverlayService"
             android:exported="false" />
     </application>
+
 </manifest>

@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#090909</color>
+    <color name="colorPrimaryLight">#121212</color>
+    <color name="colorPrimaryLightest">#1A1A1A</color>
+    <color name="colorPrimaryDark">#040404</color>
+    <color name="amber_700">#FF6F00</color>
+    <color name="gray_600">#757575</color>
+
+    <color name="colorAccent">#4D55BA</color>
+    <color name="colorAccentLight">#777CBA</color>
+    <color name="colorAccentLightest">#C3C1DE</color>
+    <color name="colorAccentDark">#16161D</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#0B0A0A</color>
+
+    <color name="meetActiveColor">#14D678</color>
+    <color name="meetInActiveColor">#1D8C55</color>
+
+    <color name="transparent_5">#0D000000</color>
+    <color name="transparent_30">#4D000000</color>
+    <color name="transparent_50">#80000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="green_transparent">#333CF488</color>
+    <color name="endeavour_logo_color">#00F8AD</color>
+    <color name="endeavour_nav_color">#068766</color>
+    <color name="endeavour_bg_color">#031D19</color>
+    <color name="endeavour_bg_color2">#18222D</color>
+
+    <color name="endeavour_logo_color_2">#CBFFCB</color>
+    <color name="endeavour_logo_color_3">#76FF03</color>
+
+    <color name="endeavour_nav_color_trans">#1F068766</color>
+
+    <color name="primary_dark">#1E293B</color>
+    <color name="text_primary">#374151</color>
+    <color name="shadow_light">#00000020</color>
+    <color name="accent_shadow">#FF6B9D30</color>
+
+    <color name="black_50">#80000000</color>
+    <color name="black_30">#4D000000</color>
+    <color name="white_20">#33FFFFFF</color>
+
 </resources>

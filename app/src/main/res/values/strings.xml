@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">DistractFree</string>
-        <string name="enable_service">Enable Reel Blocker</string>
-        <string name="service_enabled">Service is running</string>
-        <string name="service_disabled">Service is not running</string>
-        <string name="accessibility_service_description">Service to block Instagram Reels</string>
-        <string name="open_settings">Open Accessibility Settings</string>
-        <string name="how_to_enable">1. Find \"Reel Blocker\" in the list\n2. Toggle the switch to enable it</string>
+    <string name="enable_service">Enable Reel Blocker</string>
+    <string name="service_enabled">Service is running</string>
+    <string name="service_disabled">Service is not running</string>
+    <string name="accessibility_service_description">Service to block Instagram Reels</string>
+    <string name="open_settings">Open Accessibility Settings</string>
+    <string name="how_to_enable">1. Find \"Reel Blocker\" in the list\n2. Toggle the switch to enable it</string>
 
 </resources>

@@ -21,11 +21,20 @@ class MainActivity : AppCompatActivity() {
         // Restore toggle
         val prefs = getSharedPreferences("prefs", MODE_PRIVATE)
         binding.switchInstagram.isChecked = prefs.getBoolean("block_instagram_reels", false)
+        binding.switchYoutube.isChecked=prefs.getBoolean("block_youtube_shorts",false)
+        binding.switchPorn.isChecked=prefs.getBoolean("block_explicit_words",false)
 
         binding.switchInstagram.setOnCheckedChangeListener { _, isChecked ->
             prefs.edit().putBoolean("block_instagram_reels", isChecked).apply()
         }
 
+        binding.switchYoutube.setOnCheckedChangeListener {_, isChecked ->
+            prefs.edit().putBoolean("block_youtube_shorts",isChecked).apply()
+        }
+
+        binding.switchPorn.setOnCheckedChangeListener { _,isChecked ->
+            prefs.edit().putBoolean("block_explicit_words",isChecked).apply()
+        }
         // Prompt for permission
         if (!Settings.canDrawOverlays(this)) {
             startActivity(Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:$packageName")))

@@ -9,7 +9,8 @@
     <TextView
         android:id="@+id/title"
         android:text="Block Instagram Reels"
-        android:textSize="20sp"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp" />
@@ -17,6 +18,18 @@
     <Switch
         android:id="@+id/switchInstagram"
         android:text="Enable Reels Blocker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/switchYoutube"
+        android:text="Yt Shorts Blocker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/switchPorn"
+        android:text="Porn Addiction Blocker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>
