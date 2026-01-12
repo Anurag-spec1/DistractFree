@@ -1,9 +1,10 @@
-package com.example.distractfree
+package com.example.distractfree.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.distractfree.dataclasses.OnBoardData
 import com.example.distractfree.databinding.OnboardItemLayoutBinding
 
 class OnBoardAdapter(

@@ -1,19 +1,17 @@
-package com.example.distractfree
+package com.example.distractfree.activity
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.OnBackPressedCallback
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.viewpager2.widget.ViewPager2
 import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
+import com.example.distractfree.adapter.OnBoardAdapter
+import com.example.distractfree.dataclasses.OnBoardData
+import com.example.distractfree.R
 import com.example.distractfree.databinding.ActivityWelcomeBinding
-import kotlin.collections.plusAssign
-import kotlin.compareTo
 
 class Welcome : AppCompatActivity() {
     private lateinit var binding: ActivityWelcomeBinding

@@ -9,7 +9,7 @@
     app:carbon_cornerRadiusBottomStart="40dp"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    tools:context=".Welcome">
+    tools:context=".activity.Welcome">
 
     <carbon.widget.LinearLayout
         android:layout_width="match_parent"

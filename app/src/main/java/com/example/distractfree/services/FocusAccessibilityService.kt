@@ -1,4 +1,4 @@
-package com.example.distractfree
+package com.example.distractfree.services
 
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.AccessibilityServiceInfo
