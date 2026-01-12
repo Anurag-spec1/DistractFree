@@ -1,4 +1,4 @@
-package com.example.distractfree
+package com.example.distractfree.dataclasses
 
 data class OnBoardData(
     var head1: String,

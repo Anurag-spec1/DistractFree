@@ -14,11 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DistractFree">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="false" />
         <!-- Launcher Activity -->
         <activity
-            android:name=".Welcome"
+            android:name=".activity.Welcome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
         </activity>
 
         <service
-            android:name=".FocusAccessibilityService"
+            android:name=".services.FocusAccessibilityService"
             android:exported="true"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
@@ -40,7 +40,7 @@
                 android:resource="@xml/accessibility_service_config" />
         </service> <!-- Optional: Overlay blocker service -->
         <service
-            android:name=".OverlayService"
+            android:name=".services.OverlayService"
             android:exported="false" />
     </application>
 

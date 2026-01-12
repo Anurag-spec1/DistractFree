@@ -1,13 +1,11 @@
-package com.example.distractfree
+package com.example.distractfree.activity
 
-
-import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
-import android.view.accessibility.AccessibilityManager
 import androidx.appcompat.app.AppCompatActivity
+import com.example.distractfree.services.FocusAccessibilityService
 import com.example.distractfree.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -37,7 +35,12 @@ class MainActivity : AppCompatActivity() {
         }
         // Prompt for permission
         if (!Settings.canDrawOverlays(this)) {
-            startActivity(Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:$packageName")))
+            startActivity(
+                Intent(
+                    Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                    Uri.parse("package:$packageName")
+                )
+            )
         }
 
         if (!isAccessibilityServiceEnabled()) {
